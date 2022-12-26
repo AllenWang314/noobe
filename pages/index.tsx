@@ -210,7 +210,7 @@ export default function Home() {
           name="description"
           content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line! "
         />
-        <meta name="keywords" content="eddie, wang, eddiewang, eddie-wang, @wang.eddie_, EddieWangOfficial, 10mgmt,wang.eddie_, modeling, asian, chinese, music, eddie.w.model, boston, cambridge, chicago, northwestern, music, economics, acton"></meta>
+        <meta name="keywords" content="eddie, wang, eddiewang, eddie-wang, @wang.eddie_, EddieWangOfficial, 10mgmt, wang.eddie_, modeling, fashion, acting, actor, arts, artist, performer, film, theatre, TV, commercial, singer, songwriter, composition, asian, chinese, music, eddie.w.model, boston, cambridge, chicago, northwestern, music, economics, acton"></meta>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:url" content="/" />
