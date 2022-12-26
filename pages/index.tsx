@@ -75,7 +75,7 @@ const generateSocials = () => {
       }
     }
     return (
-      <a href={website} target="_blank" key={icon.name}>
+      <a href={website} target="_blank" key={icon.name} rel="noreferrer">
         {icon.element}
       </a>
     );
@@ -157,7 +157,7 @@ export default function Home() {
 
           </section>
         </div>
-        <div className={styles.author}>Made with ❤️ by <a href="mailto:hello@allenwang314.com" target="_blank">Allen</a></div>
+        <div className={styles.author}>Made with ❤️ by <a href="mailto:hello@allenwang314.com" target="_blank" rel="noreferrer">Allen</a></div>
       </main>
     </>
   );
