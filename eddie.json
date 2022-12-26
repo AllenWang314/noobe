@@ -32,14 +32,16 @@
     ],
     "links": [
         {
+            "category": "Acting",
             "title": "IMDb",
             "link": "https://www.imdb.com/name/nm13734546/",
-            "image": ""
+            "image": "imdb.png"
         },
         {
+            "category": "Modeling",
             "title": "10mgmt",
-            "link": "https://www.instagram.com/10mgmt/",
-            "image": ""
+            "link": "https://www.10mgmt.com/portfolios/eddie-wang",
+            "image": "10mgmt.png"
         }
     ],
     "spotify": [

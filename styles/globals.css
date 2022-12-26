@@ -3,6 +3,8 @@
   --border-radius: 12px;
   font-family: 'Open Sans', sans-serif;
   background-color: #f3f3f3;
+
+  overflow-x: hidden;
 }
 
 @media (max-width: 500px) {
@@ -23,6 +25,11 @@ body {
   overflow-x: hidden;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -31,6 +38,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  animation: fadeIn 0.5s;
 }
 
 a {

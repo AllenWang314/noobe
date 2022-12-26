@@ -9,10 +9,11 @@ import {
   FaYoutube,
   FaFacebook,
   FaTiktok,
-  FaEnvelope,
+  FaLink,
 } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import YouTube from "react-youtube";
+import { InstagramEmbed } from "react-social-media-embed";
 
 const icons = [
   {
@@ -82,18 +83,61 @@ const generateSocials = () => {
   });
 };
 
+const generateLinks = () => {
+  return data.links.map((linkInfo) => {
+    return (
+      <a
+        href={linkInfo.link}
+        target="_blank"
+        rel="noreferrer"
+        className={styles.linkchild}
+      >
+        <Image
+          className={styles.linkimage}
+          src={"/" + linkInfo.image}
+          alt="Picture of Eddie"
+          width={100}
+          height={100}
+        />
+        <div className={styles.linkdescription}>
+          <div className={styles.linkcategory}>
+            {linkInfo.category} <FaLink />
+          </div>
+          <div className={styles.linktitle}>{linkInfo.title}</div>
+        </div>
+      </a>
+    );
+  });
+};
+
 const generateVideos = () => {
   return data.videos.map((videoId) => {
-    return <div className={styles.youtubewrapper} key={videoId}><YouTube videoId={videoId} 
-    opts={{
-      height: "300",
-      width: "100%",
-      playerVars: {
-        autoplay: 1,
-      },
-    }} /></div>
-  })
-}
+    return (
+      <div className={styles.youtubewrapper} key={videoId}>
+        <YouTube
+          videoId={videoId}
+          opts={{
+            height: "270",
+            width: "100%",
+            playerVars: {
+              autoplay: 1,
+            },
+          }}
+        />
+      </div>
+    );
+  });
+};
+
+const generateInstagrams = () => {
+  return data.instagram.map((postUrl) => {
+    return (
+      <div>
+        <InstagramEmbed url={postUrl} height={375} width={"100%"} />
+      </div>
+    );
+  });
+};
 
 export default function Home() {
   return (
@@ -107,7 +151,15 @@ export default function Home() {
           name="description"
           content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line!"
         />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:url" content="/" />
+        <meta property="og:title" content="Eddie Wang" />
+        <meta
+          property="og:description"
+          content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line!"
+        />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -137,27 +189,30 @@ export default function Home() {
             <div className={styles.tagline}>{data.intro.tagline}</div>
             <div className={styles.socials}>{generateSocials()}</div>
           </section>
-          <section className={styles.links}></section>
+          <section className={styles.links}>{generateLinks()}</section>
           <section className={styles.spotify}>
             <iframe
-              style={{borderRadius: 12}}
+              style={{ borderRadius: 12 }}
               src="https://open.spotify.com/embed/track/3Pz84Ykgio4fXYoy0dpeGK?utm_source=generator&theme=0"
               width="100%"
-              height="352"
+              height="155"
               frameBorder="0"
               allowFullScreen
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
             ></iframe>
           </section>
-          <section className={styles.videos}>
-            {generateVideos()}
-          </section>
-          <section className={styles.instagram}>
-
-          </section>
+          <section className={styles.videos}>{generateVideos()}</section>
+          <section className={styles.instagram}>{generateInstagrams()}</section>
         </div>
-        <div className={styles.author}>Made with ❤️ by <a href="mailto:hello@allenwang314.com" target="_blank" rel="noreferrer">Allen</a></div>
+        <a
+          href="mailto:hello@allenwang314.com"
+          target="_blaank"
+          rel="noreferrer"
+          className={styles.author}
+        >
+          Noobe, made with {"<3"} by Allen
+        </a>
       </main>
     </>
   );
