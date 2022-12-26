@@ -75,7 +75,7 @@ const generateSocials = () => {
       }
     }
     return (
-      <a href={website} target="_blank">
+      <a href={website} target="_blank" key={icon.name}>
         {icon.element}
       </a>
     );
@@ -84,7 +84,7 @@ const generateSocials = () => {
 
 const generateVideos = () => {
   return data.videos.map((videoId) => {
-    return <div className={styles.youtubewrapper}><YouTube videoId={videoId} 
+    return <div className={styles.youtubewrapper} key={videoId}><YouTube videoId={videoId} 
     opts={{
       height: "300",
       width: "100%",
@@ -154,7 +154,7 @@ export default function Home() {
             {generateVideos()}
           </section>
           <section className={styles.instagram}>
-            
+
           </section>
         </div>
         <div className={styles.author}>Made with ❤️ by <a href="mailto:hello@allenwang314.com" target="_blank">Allen</a></div>
