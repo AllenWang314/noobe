@@ -1,0 +1,56 @@
+{
+    "intro": {
+        "name": "Eddie Wang",
+        "tagline": "I compose music, make movies, and model.",
+        "image": "headshot.png"
+    },
+    "socials": [
+        {
+            "name": "instagram",
+            "website": "https://www.instagram.com/wang.eddie_/" 
+        },
+        {
+            "name": "spotify",
+            "website": "https://open.spotify.com/artist/6SyAB7UwdLaWXjAS6pQbXx?si=5xlDegtvTKmBVSG3Sw9Aow" 
+        },
+        {
+           "name": "youtube",
+           "website": "https://www.youtube.com/@EddieWangOfficial" 
+        },
+        {
+            "name": "facebook",
+            "website": "https://www.facebook.com/eddiewangmusic"
+        },
+        {
+            "name": "tiktok",
+            "website": "https://www.tiktok.com/@wang.eddie_"
+        },
+        {
+            "name": "email",
+            "website": "mailto:eddie.w.model@gmail.com"
+        }
+    ],
+    "links": [
+        {
+            "title": "IMDb",
+            "link": "https://www.imdb.com/name/nm13734546/",
+            "image": ""
+        },
+        {
+            "title": "10mgmt",
+            "link": "https://www.instagram.com/10mgmt/",
+            "image": ""
+        }
+    ],
+    "spotify": [
+        "https://open.spotify.com/track/3Pz84Ykgio4fXYoy0dpeGK?si=855749368ca94f5e"
+    ],
+    "videos": [
+        "ub-D3c5kQx8",
+        "m0HdFS43IOU"
+    ],
+    "instagram": [
+        "https://www.instagram.com/p/CmDFuxuOlu7/",
+        "https://www.instagram.com/p/Cl63hTaulXL/"
+    ]
+}

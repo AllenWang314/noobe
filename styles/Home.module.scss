@@ -1,0 +1,76 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #ffffff;
+  max-width: 640px;
+  padding: 40px 80px;
+  border-radius: 25px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+
+    .name {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+    }
+
+    .headshot {
+      border-radius: 60px;
+    }
+  
+    .tagline {
+      font-size: 15px;
+    }
+  
+    .socials {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      gap: 8px;
+    }
+  
+    .socialicon {
+      font-size: 40px;
+      background-color: black;
+      color: white;
+      padding: 8px;
+      border-radius: 24px;
+    }
+  }
+
+  .spotify {
+    width: 100%;
+  }
+
+  .youtubewrapper {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .videos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.author {
+  padding: 50px 0px;
+}
