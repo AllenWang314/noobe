@@ -5,6 +5,12 @@
   background-color: #f3f3f3;
 }
 
+@media (max-width: 500px) {
+  :root {
+    background-color: #ffffff; 
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

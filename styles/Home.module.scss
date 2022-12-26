@@ -18,6 +18,13 @@
   align-items: center;
   text-align: center;
 
+  @media (max-width: 500px) {
+    .content {
+      padding: 20px 40px; 
+      background-color: black;
+    }
+  }
+
   .intro {
     display: flex;
     flex-direction: column;
