@@ -208,15 +208,20 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line!"
+          content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line! "
         />
+        <meta name="keywords" content="eddie, wang, eddiewang, eddie-wang, @wang.eddie_, EddieWangOfficial, 10mgmt,wang.eddie_, modeling, asian, chinese, music, eddie.w.model, boston, cambridge, chicago, northwestern, music, economics, acton"></meta>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:url" content="/" />
-        <meta property="og:title" content="Eddie Wang" />
+        <meta property="og:title" content="/headshot.png" />
         <meta
           property="og:description"
           content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line!"
+        />
+        <meta
+          property="og:image"
+          content=""
         />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
