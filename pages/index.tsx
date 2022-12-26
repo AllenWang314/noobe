@@ -14,6 +14,7 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 import YouTube from "react-youtube";
 import { InstagramEmbed } from "react-social-media-embed";
+import { useEffect, useState } from "react";
 
 const icons = [
   {
@@ -91,13 +92,21 @@ const generateLinks = () => {
         target="_blank"
         rel="noreferrer"
         className={styles.linkchild}
+        key={linkInfo.link}
       >
         <Image
-          className={styles.linkimage}
+          className={`${styles.linkimage} ${styles.desktop}`}
           src={"/" + linkInfo.image}
           alt="Picture of Eddie"
           width={100}
           height={100}
+        />
+        <Image
+          className={`${styles.linkimage} ${styles.mobile}`}
+          src={"/" + linkInfo.image}
+          alt="Picture of Eddie"
+          width={50}
+          height={50}
         />
         <div className={styles.linkdescription}>
           <div className={styles.linkcategory}>
@@ -110,17 +119,62 @@ const generateLinks = () => {
   });
 };
 
+const generateSpotify = () => {
+  return data.spotify.map((songId) => {
+    return (
+      <>
+        <iframe
+          className={styles.desktop}
+          key={songId}
+          style={{ borderRadius: 12 }}
+          src={`https://open.spotify.com/embed/track/${songId}?utm_source=generator&theme=0`}
+          width="100%"
+          height={"155"}
+          frameBorder="0"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <iframe
+          className={styles.mobile}
+          key={songId}
+          style={{ borderRadius: 12 }}
+          src={`https://open.spotify.com/embed/track/${songId}?utm_source=generator&theme=0`}
+          width="100%"
+          height={"80"}
+          frameBorder="0"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </>
+    );
+  });
+};
+
 const generateVideos = () => {
   return data.videos.map((videoId) => {
     return (
       <div className={styles.youtubewrapper} key={videoId}>
         <YouTube
+          className={styles.desktop}
           videoId={videoId}
           opts={{
             height: "270",
             width: "100%",
             playerVars: {
-              autoplay: 1,
+              autoplay: 0,
+            },
+          }}
+        />
+        <YouTube
+          className={styles.mobile}
+          videoId={videoId}
+          opts={{
+            height: "200",
+            width: "100%",
+            playerVars: {
+              autoplay: 0,
             },
           }}
         />
@@ -132,8 +186,13 @@ const generateVideos = () => {
 const generateInstagrams = () => {
   return data.instagram.map((postUrl) => {
     return (
-      <div>
-        <InstagramEmbed url={postUrl} height={375} width={"100%"} />
+      <div key={postUrl}>
+        <div className={styles.desktop}>
+          <InstagramEmbed url={postUrl} height={375} width={"100%"} />
+        </div>
+        <div className={styles.mobile}>
+          <InstagramEmbed url={postUrl} height={300} width={"100%"} />
+        </div>
       </div>
     );
   });
@@ -190,21 +249,11 @@ export default function Home() {
             <div className={styles.socials}>{generateSocials()}</div>
           </section>
           <section className={styles.links}>{generateLinks()}</section>
-          <section className={styles.spotify}>
-            <iframe
-              style={{ borderRadius: 12 }}
-              src="https://open.spotify.com/embed/track/3Pz84Ykgio4fXYoy0dpeGK?utm_source=generator&theme=0"
-              width="100%"
-              height="155"
-              frameBorder="0"
-              allowFullScreen
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            ></iframe>
-          </section>
+          <section className={styles.spotify}>{generateSpotify()}</section>
           <section className={styles.videos}>{generateVideos()}</section>
           <section className={styles.instagram}>{generateInstagrams()}</section>
         </div>
+
         <a
           href="mailto:hello@allenwang314.com"
           target="_blaank"
