@@ -38,10 +38,10 @@
             "image": "imdb.png"
         },
         {
-            "category": "Modeling",
-            "title": "10mgmt",
-            "link": "https://www.10mgmt.com/portfolios/eddie-wang",
-            "image": "10mgmt.png"
+            "category": "Music",
+            "title": "Favorites",
+            "link": "https://open.spotify.com/playlist/3aRs77YjNhR47p9mJO9ent?si=48a8bbd5c34643e7",
+            "image": "spotify.png"
         }
     ],
     "spotify": [
@@ -52,7 +52,6 @@
         "m0HdFS43IOU"
     ],
     "instagram": [
-        "https://www.instagram.com/p/CmDFuxuOlu7/",
-        "https://www.instagram.com/p/Cl63hTaulXL/"
+        "https://www.instagram.com/p/CmDFuxuOlu7/"
     ]
 }
