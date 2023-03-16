@@ -38,10 +38,10 @@
             "image": "imdb.png"
         },
         {
-            "category": "Music",
-            "title": "Favorites",
-            "link": "https://open.spotify.com/playlist/3aRs77YjNhR47p9mJO9ent?si=48a8bbd5c34643e7",
-            "image": "spotify.png"
+            "category": "Modeling",
+            "title": "Option 1",
+            "link": "http://www.option1models.com/divisions/new-options/portfolios/eddie-wang",
+            "image": "option1.png"
         }
     ],
     "spotify": [
@@ -52,6 +52,6 @@
         "m0HdFS43IOU"
     ],
     "instagram": [
-        "https://www.instagram.com/p/CmDFuxuOlu7/"
+        "https://www.instagram.com/p/Cpxz8QhutuM/"
     ]
 }
