@@ -32,14 +32,14 @@
     ],
     "links": [
         {
-            "category": "Modeling",
-            "title": "Portfolio",
+            "category": "Modeling Book",
+            "title": "Option 1 Models",
             "link": "https://www.option1models.com/divisions/new-options/portfolios/eddie-wang/",
-            "image": "Mark.jpg"
+            "image": "Mark.JPG"
         },
         {
-            "category": "Music",
-            "title": "Stereo Stickman Magazine",
+            "category": "Music Magazine",
+            "title": "Stereo Stickman",
             "link": "https://stereostickman.com/music/eddie-wang-feel-the-same/",
             "image": "new_song.png"
         }
