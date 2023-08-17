@@ -7,7 +7,7 @@
     "socials": [
         {
             "name": "instagram",
-            "website": "https://www.instagram.com/wang.eddie_/" 
+            "website": "https://www.instagram.com/eddiewang01/" 
         },
         {
             "name": "spotify",
@@ -15,7 +15,7 @@
         },
         {
            "name": "youtube",
-           "website": "https://www.youtube.com/@EddieWangOfficial" 
+           "website": "https://www.youtube.com/@eddiewangmusic" 
         },
         {
             "name": "facebook",
@@ -23,7 +23,7 @@
         },
         {
             "name": "tiktok",
-            "website": "https://www.tiktok.com/@eddie.wang_"
+            "website": "https://www.tiktok.com/@eddiewangmusic"
         },
         {
             "name": "email",
@@ -32,14 +32,14 @@
     ],
     "links": [
         {
-            "category": "Music",
-            "title": "New Song!",
-            "link": "https://staticdive.com/2023/04/21/eddie-wang/amp/",
+            "category": "Modeling",
+            "title": "Portfolio",
+            "link": "https://www.option1models.com/divisions/new-options/portfolios/eddie-wang/",
             "image": "new_song.png"
         },
         {
             "category": "Music",
-            "title": "Feel the Same",
+            "title": "Stereo Stickman Magazine",
             "link": "https://stereostickman.com/music/eddie-wang-feel-the-same/",
             "image": "feel.png"
         }
