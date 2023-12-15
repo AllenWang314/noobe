@@ -120,9 +120,9 @@ const generateLinks = () => {
 };
 
 const generateSpotify = () => {
-  return data.spotify.map((songId) => {
+  return data.spotify.map((songId, ind) => {
     return (
-      <div className={styles.spotifyChild}>
+      <div key={ind} className={styles.spotifyChild}>
         <iframe
           className={styles.desktop}
           key={songId}
