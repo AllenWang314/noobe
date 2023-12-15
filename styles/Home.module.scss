@@ -9,7 +9,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 12px;
   background-color: #ffffff;
   max-width: 640px;
   padding: 40px 80px;
@@ -57,8 +57,27 @@
   .spotify {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .spotifyChild {
+    max-width: calc(50% - 6px);
+  }
+  @media (max-width: 500px) {
+    .spotify {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  
+    .spotifyChild {
+      max-width: 100%;
+    }
   }
 
   .youtubewrapper {
@@ -79,6 +98,47 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .longlinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+
+    .linkchild {
+      width: 100%;
+      background-color: #f3f3f3;
+      padding: 6px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      transition: box-shadow .1s;
+    }
+
+    .linkimage {
+      border-radius: 6px;
+    }
+    
+    .linkdescription {
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .linkcategory {
+      font-size: 10px;
+    }
+
+    .linktitle {
+      font-size: 20px;
+    }
+  }
+  
 
   .links {
     width: 100%;

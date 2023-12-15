@@ -98,15 +98,15 @@ const generateLinks = () => {
           className={`${styles.linkimage} ${styles.desktop}`}
           src={"/" + linkInfo.image}
           alt="Picture of Eddie"
-          width={100}
-          height={100}
+          width={65}
+          height={65}
         />
         <Image
           className={`${styles.linkimage} ${styles.mobile}`}
           src={"/" + linkInfo.image}
           alt="Picture of Eddie"
-          width={50}
-          height={50}
+          width={65}
+          height={65}
         />
         <div className={styles.linkdescription}>
           <div className={styles.linkcategory}>
@@ -122,14 +122,14 @@ const generateLinks = () => {
 const generateSpotify = () => {
   return data.spotify.map((songId) => {
     return (
-      <>
+      <div className={styles.spotifyChild}>
         <iframe
           className={styles.desktop}
           key={songId}
           style={{ borderRadius: 12 }}
           src={`https://open.spotify.com/embed/track/${songId}?utm_source=generator&theme=0`}
           width="100%"
-          height={"155"}
+          height={"80"}
           frameBorder="0"
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -147,7 +147,7 @@ const generateSpotify = () => {
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-      </>
+      </div>
     );
   });
 };
@@ -210,7 +210,10 @@ export default function Home() {
           name="description"
           content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line! "
         />
-        <meta name="keywords" content="eddie, wang, eddiewang, eddie-wang, @wang.eddie_, EddieWangOfficial, 10mgmt, wang.eddie_, modeling, fashion, acting, actor, arts, artist, performer, film, theatre, TV, commercial, singer, songwriter, composition, asian, chinese, music, eddie.w.model, boston, cambridge, chicago, northwestern, music, economics, acton"></meta>
+        <meta
+          name="keywords"
+          content="eddie, wang, eddiewang, eddie-wang, @wang.eddie_, EddieWangOfficial, 10mgmt, wang.eddie_, modeling, fashion, acting, actor, arts, artist, performer, film, theatre, TV, commercial, singer, songwriter, composition, asian, chinese, music, eddie.w.model, boston, cambridge, chicago, northwestern, music, economics, acton"
+        ></meta>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:url" content="/" />
@@ -219,10 +222,7 @@ export default function Home() {
           property="og:description"
           content="All about Eddie Wang - actor, musician, model - learn more about me and drop a line!"
         />
-        <meta
-          property="og:image"
-          content=""
-        />
+        <meta property="og:image" content="" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -253,7 +253,7 @@ export default function Home() {
             <div className={styles.tagline}>{data.intro.tagline}</div>
             <div className={styles.socials}>{generateSocials()}</div>
           </section>
-          <section className={styles.links}>{generateLinks()}</section>
+          <section className={styles.longlinks}>{generateLinks()}</section>
           <section className={styles.spotify}>{generateSpotify()}</section>
           <section className={styles.videos}>{generateVideos()}</section>
           <section className={styles.instagram}>{generateInstagrams()}</section>

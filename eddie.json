@@ -1,61 +1,61 @@
 {
-    "intro": {
-        "name": "Eddie Wang",
-        "tagline": "I use my body and soul to make art",
-        "image": "headshot.png"
+  "intro": {
+    "name": "Eddie Wang",
+    "tagline": "I use my body and soul to make art",
+    "image": "headshot.png"
+  },
+  "socials": [
+    {
+      "name": "instagram",
+      "website": "https://www.instagram.com/eddiewang01/"
     },
-    "socials": [
-        {
-            "name": "instagram",
-            "website": "https://www.instagram.com/eddiewang01/" 
-        },
-        {
-            "name": "spotify",
-            "website": "https://open.spotify.com/artist/6SyAB7UwdLaWXjAS6pQbXx?si=5xlDegtvTKmBVSG3Sw9Aow" 
-        },
-        {
-           "name": "youtube",
-           "website": "https://www.youtube.com/@eddiewangmusic" 
-        },
-        {
-            "name": "facebook",
-            "website": "https://www.facebook.com/eddiewangmusic"
-        },
-        {
-            "name": "tiktok",
-            "website": "https://www.tiktok.com/@eddiewangmusic"
-        },
-        {
-            "name": "email",
-            "website": "mailto:eddie.w.model@gmail.com"
-        }
-    ],
-    "links": [
-        {
-            "category": "Model Book",
-            "title": "Option 1 Models",
-            "link": "https://www.option1models.com/divisions/new-options/portfolios/eddie-wang/",
-            "image": "option.jpg"
-        },
-        {
-            "category": "Music Review",
-            "title": "Stereo Stickman",
-            "link": "https://stereostickman.com/music/eddie-wang-feel-the-same/",
-            "image": "new_song.png"
-        }
-    ],
-    "Spotify": [
-        "47rA5hPEO0irjbGl0HWuxg",
-        "7CzemtCg9vX9c1dAWIN6Oe",
-        "3dmhZ4idfv8OhE0vaV1Q5L",
-        "3Pz84Ykgio4fXYoy0dpeGK"
-        
-    ],
-    "videos": [
-        "CziZ3dZh5gg",
-        "qlfyuOqfzHk"
-    ],
-    "instagram": [
-        
-    ]
+    {
+      "name": "spotify",
+      "website": "https://open.spotify.com/artist/6SyAB7UwdLaWXjAS6pQbXx?si=5xlDegtvTKmBVSG3Sw9Aow"
+    },
+    {
+      "name": "youtube",
+      "website": "https://www.youtube.com/@eddiewangmusic"
+    },
+    {
+      "name": "facebook",
+      "website": "https://www.facebook.com/eddiewangmusic"
+    },
+    {
+      "name": "tiktok",
+      "website": "https://www.tiktok.com/@eddiewangmusic"
+    },
+    {
+      "name": "email",
+      "website": "mailto:eddie.w.model@gmail.com"
+    }
+  ],
+  "links": [
+    {
+      "category": "Model Book",
+      "title": "Option 1 Models",
+      "link": "https://www.option1models.com/divisions/new-options/portfolios/eddie-wang/",
+      "image": "option.jpg"
+    },
+    {
+      "category": "Donation",
+      "title": "Paypal Donation",
+      "link": "https://www.paypal.com/paypalme/eddiewang01?utm_content=6SyAB7UwdLaWXjAS6pQbXx&utm_medium=58bd3c95768941ea9eb4350aaa033eb3",
+      "image": "paypal.png"
+    },
+    {
+      "category": "New Release",
+      "title": "It’s Beginning to Look a Lot Like Christmas",
+      "link": "https://eddiewang.ffm.to/christmas",
+      "image": "christmas.png"
+    }
+  ],
+  "spotify": [
+    "47rA5hPEO0irjbGl0HWuxg",
+    "7CzemtCg9vX9c1dAWIN6Oe",
+    "3dmhZ4idfv8OhE0vaV1Q5L",
+    "3Pz84Ykgio4fXYoy0dpeGK"
+  ],
+  "videos": ["CziZ3dZh5gg"],
+  "instagram": []
 }
