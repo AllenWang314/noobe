@@ -28,6 +28,10 @@
     {
       "name": "email",
       "website": "mailto:eddie.w.model@gmail.com"
+    },
+    {
+      "name": "paypal",
+      "website": "https://www.paypal.com/paypalme/eddiewang01?utm_content=6SyAB7UwdLaWXjAS6pQbXx&utm_medium=58bd3c95768941ea9eb4350aaa033eb3"
     }
   ],
   "links": [
@@ -44,14 +48,6 @@
     "3dmhZ4idfv8OhE0vaV1Q5L",
     "3Pz84Ykgio4fXYoy0dpeGK"
   ],
-    {
-      "category": "Donation",
-      "title": "Paypal",
-      "link": "https://www.paypal.com/paypalme/eddiewang01?utm_content=6SyAB7UwdLaWXjAS6pQbXx&utm_medium=58bd3c95768941ea9eb4350aaa033eb3",
-      "image": "paypal.png"
-    }
-  ],
-  {
   "videos": ["CziZ3dZh5gg"],
   "instagram": []
 }

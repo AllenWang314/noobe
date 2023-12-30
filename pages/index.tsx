@@ -10,6 +10,7 @@ import {
   FaFacebook,
   FaTiktok,
   FaLink,
+  FaPaypal,
 } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import YouTube from "react-youtube";
@@ -62,6 +63,14 @@ const icons = [
     element: (
       <IconContext.Provider value={{ className: styles.socialicon }}>
         <MdOutlineEmail />
+      </IconContext.Provider>
+    ),
+  },
+  {
+    name: "paypal",
+    element: (
+      <IconContext.Provider value={{ className: styles.socialicon }}>
+        <FaPaypal />
       </IconContext.Provider>
     ),
   },
