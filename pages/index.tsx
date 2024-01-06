@@ -93,40 +93,40 @@ const generateSocials = () => {
   });
 };
 
-const generateLinks = () => {
-  return data.links.map((linkInfo) => {
-    return (
-      <a
-        href={linkInfo.link}
-        target="_blank"
-        rel="noreferrer"
-        className={styles.linkchild}
-        key={linkInfo.link}
-      >
-        <Image
-          className={`${styles.linkimage} ${styles.desktop}`}
-          src={"/" + linkInfo.image}
-          alt="Picture of Eddie"
-          width={65}
-          height={65}
-        />
-        <Image
-          className={`${styles.linkimage} ${styles.mobile}`}
-          src={"/" + linkInfo.image}
-          alt="Picture of Eddie"
-          width={65}
-          height={65}
-        />
-        <div className={styles.linkdescription}>
-          <div className={styles.linkcategory}>
-            {linkInfo.category} <FaLink />
-          </div>
-          <div className={styles.linktitle}>{linkInfo.title}</div>
-        </div>
-      </a>
-    );
-  });
-};
+// const generateLinks = () => {
+//   return data.links.map((linkInfo) => {
+//     return (
+//       <a
+//         href={linkInfo.link}
+//         target="_blank"
+//         rel="noreferrer"
+//         className={styles.linkchild}
+//         key={linkInfo.link}
+//       >
+//         <Image
+//           className={`${styles.linkimage} ${styles.desktop}`}
+//           src={"/" + linkInfo.image}
+//           alt="Picture of Eddie"
+//           width={65}
+//           height={65}
+//         />
+//         <Image
+//           className={`${styles.linkimage} ${styles.mobile}`}
+//           src={"/" + linkInfo.image}
+//           alt="Picture of Eddie"
+//           width={65}
+//           height={65}
+//         />
+//         <div className={styles.linkdescription}>
+//           <div className={styles.linkcategory}>
+//             {linkInfo.category} <FaLink />
+//           </div>
+//           <div className={styles.linktitle}>{linkInfo.title}</div>
+//         </div>
+//       </a>
+//     );
+//   });
+// };
 
 const generateSpotify = () => {
   return data.spotify.map((songId, ind) => {
@@ -262,7 +262,7 @@ export default function Home() {
             <div className={styles.tagline}>{data.intro.tagline}</div>
             <div className={styles.socials}>{generateSocials()}</div>
           </section>
-          <section className={styles.longlinks}>{generateLinks()}</section>
+          {/* <section className={styles.longlinks}>{generateLinks()}</section> */}
           <section className={styles.spotify}>{generateSpotify()}</section>
           <section className={styles.videos}>{generateVideos()}</section>
           <section className={styles.instagram}>{generateInstagrams()}</section>
