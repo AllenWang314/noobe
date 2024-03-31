@@ -4,6 +4,13 @@
     "tagline": "I use my body and soul to make art",
     "image": "headshot.png"
   },
+  "banner": {
+    "name": "Eddie Wang",
+    "content": "Book Eddie to perform at your event",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLScR5nYy3IWFZk1pHt9IroD1-kBFMIbMaxZYP9Qf2ma6DS7MuQ/viewform",
+    "backgroundColor": "#000000",
+    "fontColor": "#ffffff"
+  },
   "socials": [
     {
       "name": "instagram",
@@ -35,7 +42,7 @@
     }
   ],
   "videos": ["eoBJsRAc_mw"],
-  "links":[],
+  "links": [],
   "spotify": [
     "4VVV0gqP8GrItyST3J84OY",
     "47rA5hPEO0irjbGl0HWuxg",

@@ -15,7 +15,6 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 import YouTube from "react-youtube";
 import { InstagramEmbed } from "react-social-media-embed";
-import { useEffect, useState } from "react";
 
 const icons = [
   {
@@ -245,6 +244,7 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
+
       <main className={styles.main}>
         <div className={styles.content}>
           <section className={styles.intro}>
@@ -262,6 +262,19 @@ export default function Home() {
             <div className={styles.tagline}>{data.intro.tagline}</div>
             <div className={styles.socials}>{generateSocials()}</div>
           </section>
+          {data.banner && (
+            <a
+              className={styles.banner}
+              href={data.banner.link}
+              style={{
+                color: data.banner.fontColor,
+                backgroundColor: data.banner.backgroundColor,
+              }}
+            >
+              <FaLink style={{ marginRight: 4 }} /> {data.banner.content}
+              <FaLink style={{ marginLeft: 4 }} />
+            </a>
+          )}
           {/* <section className={styles.longlinks}>{generateLinks()}</section> */}
           <section className={styles.spotify}>{generateSpotify()}</section>
           <section className={styles.videos}>{generateVideos()}</section>
